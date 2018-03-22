@@ -44,12 +44,12 @@ public:
     std::ifstream& readFrom(std::ifstream& istr);
     // считывание/запись контейнеров
 
+    unsigned long long gethash_(const cv::Mat& input);
+    // высчитать хэш от картинки
+    
 private:
     std::set<unsigned long long> Container_;
     // контейнер
-
-    unsigned long long gethash_(const cv::Mat& input);
-    // высчитать хэш от картинки
 
 };
 
